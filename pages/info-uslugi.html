@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacje o hotelu - Dodatkowe usługi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .tiles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .tile, .button {
+            background-color: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: block;
+            width: 180px;
+            margin: 10px auto;
+        }
+
+        .tile:hover, .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-align: center;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="informacje.html" class="button back-button">Powrót</a>
+    <header>
+        <p class="page-number">Strona 2 z 5</p>
+    </header>
+    <main>
+        <h1>Dodatkowe usługi</h1>
+        <div class="tiles">
+            <a href="info-uslugi-taxi.html" class="tile">Taxi</a>
+            <a href="info-uslugi-jedzenie.html" class="tile">Jedzenie na dowóz</a>
+            <a href="info-uslugi-rowery.html" class="tile">Rowery</a>
+            <a href="info-uslugi-wypozyczalnia.html" class="tile">Wypożyczalnia sprzętu</a>
+        </div>
+    </main>
+    <div class="navigation">
+        <a href="informacje.html" class="button">Powrót</a>
+        <a href="info-mapa.html" class="button">Dalej</a>
+    </div>
+</body>
+</html>
+
